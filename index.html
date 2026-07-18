@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Datenschutzerklärung — PATHORA</title>
-  <meta name="description" content="Datenschutzerklärung für die Android-App PATHORA (com.clxon24.pathora)." />
+  <title>Privacy Policy — PATHORA</title>
+  <meta name="description" content="Privacy policy for the Android app PATHORA (com.clxon24.pathora)." />
   <style>
     :root {
       --bg: #f7f1e8;
@@ -31,21 +31,37 @@
       box-shadow: 0 10px 30px rgba(44, 36, 32, 0.06);
       margin-bottom: 18px;
     }
-    h1 { margin: 0 0 8px; font-size: 1.65rem; }
-    .meta { color: var(--muted); font-size: 0.95rem; }
-    nav { margin-top: 12px; }
-    nav a {
+    .lang {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .lang span {
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .lang a {
       display: inline-block;
-      margin-right: 10px;
-      padding: 8px 12px;
+      padding: 8px 14px;
       border-radius: 999px;
       text-decoration: none;
       color: var(--ink);
-      background: #ffe0ef;
+      background: #f0e8df;
       font-weight: 700;
       font-size: 0.9rem;
+      border: 1.5px solid transparent;
     }
-    nav a.en { background: #dff4ff; }
+    .lang a[aria-current="page"] {
+      background: #dff4ff;
+      border-color: #5ac8ff;
+    }
+    h1 { margin: 0 0 8px; font-size: 1.65rem; }
+    .meta { color: var(--muted); font-size: 0.95rem; margin: 0; }
     article {
       background: var(--card);
       border: 1px solid var(--line);
@@ -71,127 +87,126 @@
 <body>
   <div class="wrap">
     <header>
-      <h1>Datenschutzerklärung — PATHORA</h1>
-      <p class="meta">Zuletzt aktualisiert: 19. Juli 2026</p>
-      <nav>
-        <a href="./" aria-current="page">Deutsch</a>
-        <a class="en" href="./en/">English</a>
+      <nav class="lang" aria-label="Language">
+        <span>Language</span>
+        <a href="./" aria-current="page">English</a>
+        <a href="./de/">Deutsch</a>
       </nav>
+      <h1>Privacy Policy — PATHORA</h1>
+      <p class="meta">Last updated: 19 July 2026</p>
     </header>
 
     <article>
-      <h2>1. Verantwortlicher</h2>
+      <h2>1. Data controller</h2>
       <p>
-        Entwickler von PATHORA (GitHub: <a href="https://github.com/XClaziX">XClaziX</a>)<br />
-        Kontakt: <a href="https://github.com/XClaziX/pathora-privacy/issues">GitHub Issues (pathora-privacy)</a>
+        Developer of PATHORA (GitHub: <a href="https://github.com/XClaziX">XClaziX</a>)<br />
+        Contact: <a href="https://github.com/XClaziX/pathora-privacy/issues">GitHub Issues (pathora-privacy)</a>
       </p>
       <p class="note">
-        Für den öffentlichen Play-Store-Release bitte eine feste Support-E-Mail hier ergänzen.
+        Before a public Play Store release, please add a stable support email address here.
       </p>
 
-      <h2>2. Übersicht</h2>
+      <h2>2. Overview</h2>
       <p>
-        PATHORA („die App“, Paket-ID <code>com.clxon24.pathora</code>) ist ein Android-Match-3-Puzzle.
-        Die App erfordert keine Registrierung und kein Nutzerkonto. Spielfortschritt wird
-        ausschließlich lokal auf dem Gerät gespeichert (Android DataStore). Es werden keine
-        Nutzerinhalte erstellt, geteilt oder auf Servern des Anbieters gespeichert.
+        PATHORA (“the App”, package ID <code>com.clxon24.pathora</code>) is an Android match-3 puzzle game.
+        The App does not require an account or registration. Gameplay progress is stored only
+        locally on your device (Android DataStore). The App does not create, share, or upload
+        user-generated content to any server operated by us.
       </p>
       <p>
-        Zur Finanzierung kann die App Werbung über <strong>Google AdMob</strong> sowie die
-        <strong>User Messaging Platform (UMP)</strong> von Google zur Einholung der
-        Werbe-Einwilligung nutzen. Dadurch können personenbezogene Daten (insbesondere
-        Werbekennungen) durch Google und ggf. verbundene Werbenetzwerke verarbeitet werden.
+        To support development, the App may display advertising via <strong>Google AdMob</strong>
+        and use Google’s <strong>User Messaging Platform (UMP)</strong> to collect advertising
+        consent. As a result, personal data (in particular advertising identifiers) may be
+        processed by Google and connected ad networks.
       </p>
 
-      <h2>3. Welche Daten werden verarbeitet?</h2>
+      <h2>3. What data is processed?</h2>
       <table>
         <thead>
-          <tr><th>Datenart</th><th>Zweck</th><th>Verantwortlich</th></tr>
+          <tr><th>Data type</th><th>Purpose</th><th>Controller</th></tr>
         </thead>
         <tbody>
           <tr>
-            <td>Werbe-ID (Advertising ID), Gerätekennungen</td>
-            <td>Personalisierte/nicht-personalisierte Werbung, Betrugsprävention</td>
+            <td>Advertising ID, device identifiers</td>
+            <td>Personalized/non-personalized ads, fraud prevention</td>
             <td>Google AdMob</td>
           </tr>
           <tr>
-            <td>Anzeigen-Interaktionen (Impressions, Klicks)</td>
-            <td>Werbeausspielung, Abrechnung</td>
+            <td>Ad interactions (impressions, clicks)</td>
+            <td>Ad serving, billing</td>
             <td>Google AdMob</td>
           </tr>
           <tr>
-            <td>Einwilligungsstatus (Consent)</td>
-            <td>Speicherung der Werbe-Einwilligung</td>
-            <td>Google UMP (lokal + ggf. Google-Server)</td>
+            <td>Consent status</td>
+            <td>Storing your advertising consent choice</td>
+            <td>Google UMP (locally + potentially Google servers)</td>
           </tr>
           <tr>
-            <td>Lokale Spielstände (Level-Fortschritt, Einstellungen)</td>
-            <td>Speicherung des Spielfortschritts</td>
-            <td>Nur lokal auf dem Gerät</td>
+            <td>Local save data (level progress, settings)</td>
+            <td>Storing gameplay progress</td>
+            <td>Local device only</td>
           </tr>
         </tbody>
       </table>
       <p>
-        Es werden <strong>keine</strong> Namen, E-Mail-Adressen, Standortdaten oder
-        Zahlungsinformationen durch die App selbst erhoben. Bei freiwilligem Kontakt
-        (z.&nbsp;B. Support) werden Kontaktdaten nur zur Beantwortung verarbeitet.
+        The App itself does <strong>not</strong> collect names, email addresses, location, or
+        payment information. If you contact us voluntarily (e.g. for support), we process
+        contact details solely to respond.
       </p>
 
-      <h2>4. Google AdMob &amp; Werbung</h2>
+      <h2>4. Google AdMob &amp; advertising</h2>
       <p>
-        Die App kann Banner-, Interstitial- und belohnte Werbeanzeigen (Rewarded Ads)
-        über Google AdMob anzeigen. AdMob kann Gerätekennungen und Nutzungsdaten
-        verarbeiten. Weitere Informationen:
+        The App may show banner, interstitial, and rewarded ads via Google AdMob. AdMob may
+        process device identifiers and usage data. More information:
       </p>
       <ul>
-        <li><a href="https://policies.google.com/privacy">Google-Datenschutzerklärung</a></li>
-        <li><a href="https://policies.google.com/technologies/partner-sites">Wie Google Daten aus Partner-Apps nutzt</a></li>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses data from partner apps</a></li>
       </ul>
       <p>
-        Interstitials erscheinen frühestens nach mehreren abgeschlossenen Leveln und mit
-        Abkühlzeit. Belohnte Ads sind freiwillig.
+        Interstitials appear only after several completed levels and respect a cooldown.
+        Rewarded ads are optional.
       </p>
 
-      <h2>5. Einwilligung (Consent) über UMP</h2>
+      <h2>5. Consent via UMP</h2>
       <p>
-        Beim ersten Start (bzw. in relevanten Regionen wie EWR/UK/CH) kann ein
-        Einwilligungsformular über Google UMP erscheinen. Die Entscheidung lässt sich in
-        den App-Einstellungen unter „Datenschutz-Optionen“ ändern. Schlägt die Abfrage
-        technisch fehl, startet das Spiel trotzdem — personalisierte Ads werden dann
-        nicht angefordert, bis eine Einwilligung vorliegt.
+        On first launch (and for relevant users in the EEA/UK/Switzerland and other regions
+        determined by Google), a consent form may appear via UMP. You can change this in
+        Settings → Privacy options. If consent fails technically, the game still starts —
+        personalized ads are not requested until consent is obtained.
       </p>
 
-      <h2>6. Kinder / Zielgruppe</h2>
+      <h2>6. Children / target audience</h2>
       <p>
-        PATHORA richtet sich nicht gezielt an Kinder unter 13 Jahren. Für Family-/
-        Kinderschutz-Programme gelten ggf. zusätzliche Vorgaben (z.&nbsp;B. COPPA, GDPR-K).
+        PATHORA is not specifically directed at children under 13. Family/child-directed
+        programs may require additional compliance (e.g. COPPA, GDPR-K).
       </p>
 
-      <h2>7. Datenspeicherung &amp; Löschung</h2>
+      <h2>7. Data retention &amp; deletion</h2>
       <ul>
-        <li>Spielfortschritt und Einstellungen liegen nur lokal und werden bei
-          Deinstallation bzw. Löschen der App-Daten entfernt.</li>
-        <li>Es gibt keinen eigenen Server für personenbezogene Spielerdaten.
-          Anfragen zu Werbedaten von Google richten sich an Google.</li>
+        <li>Progress and settings are stored only on device and removed on uninstall or
+          clearing app data.</li>
+        <li>We do not operate a server for personal player data. Requests about Google ad
+          data should go to Google.</li>
       </ul>
 
-      <h2>8. Rechte (DSGVO)</h2>
+      <h2>8. Your rights (GDPR)</h2>
       <p>
-        Soweit die DSGVO anwendbar ist, bestehen u.&nbsp;a. Rechte auf Auskunft, Berichtigung,
-        Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch zu Daten, die wir
-        direkt verarbeiten (z.&nbsp;B. Support-Nachrichten). Kontakt über die
+        Where the GDPR applies, you have rights including access, rectification, erasure,
+        restriction, portability, and objection regarding personal data we process directly
+        (e.g. support messages). Contact via
         <a href="https://github.com/XClaziX/pathora-privacy/issues">GitHub Issues</a>.
       </p>
 
-      <h2>9. Änderungen</h2>
+      <h2>9. Changes</h2>
       <p>
-        Diese Erklärung kann bei neuen Funktionen oder rechtlichen Anforderungen
-        aktualisiert werden. Das Datum „Zuletzt aktualisiert“ oben zeigt die aktuelle Version.
+        We may update this policy for new features or legal requirements. The “Last updated”
+        date above reflects the current version.
       </p>
 
-      <h2>10. Kontakt</h2>
+      <h2>10. Contact</h2>
       <p>
-        Fragen zum Datenschutz:
+        Privacy questions:
         <a href="https://github.com/XClaziX/pathora-privacy/issues">github.com/XClaziX/pathora-privacy/issues</a>
       </p>
     </article>
