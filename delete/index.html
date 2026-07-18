@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data deletion request — PATHORA</title>
+  <meta name="description" content="How to delete PATHORA app data and request deletion from the developer." />
+  <style>
+    :root {
+      --bg: #f7f1e8;
+      --ink: #2c2420;
+      --muted: #6a5a52;
+      --card: #fffdf9;
+      --accent: #ff5a9a;
+      --line: #e8ddd0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: linear-gradient(180deg, #ffe8f2 0%, var(--bg) 28%, #e8f7ff 100%);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 28px 18px 64px; }
+    header {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px 20px;
+      box-shadow: 0 10px 30px rgba(44, 36, 32, 0.06);
+      margin-bottom: 18px;
+    }
+    .lang {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .lang span {
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .lang a {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--ink);
+      background: #f0e8df;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border: 1.5px solid transparent;
+    }
+    .lang a[aria-current="page"] {
+      background: #dff4ff;
+      border-color: #5ac8ff;
+    }
+    h1 { margin: 0 0 8px; font-size: 1.65rem; }
+    .meta { color: var(--muted); font-size: 0.95rem; margin: 0; }
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 8px 20px 28px;
+    }
+    h2 { font-size: 1.15rem; margin-top: 1.6rem; color: var(--accent); }
+    ol, ul { padding-left: 1.25rem; }
+    li { margin: 0.45rem 0; }
+    a { color: #0b6e99; }
+    code { background: #f0e8df; padding: 1px 5px; border-radius: 6px; }
+    .cta {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 14px 20px;
+      border-radius: 14px;
+      background: var(--accent);
+      color: #fff !important;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(255, 90, 154, 0.28);
+    }
+    .box {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: #fff6d8;
+      border: 1px solid #f0e0a8;
+      color: var(--ink);
+      font-size: 0.95rem;
+    }
+    .ok {
+      background: #e8fff4;
+      border-color: #a8e8c8;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <nav class="lang" aria-label="Language">
+        <span>Language</span>
+        <a href="./" aria-current="page">English</a>
+        <a href="../de/delete/">Deutsch</a>
+      </nav>
+      <h1>Data deletion — PATHORA</h1>
+      <p class="meta">
+        Android app <code>com.clxon24.pathora</code> · Last updated: 19 July 2026
+      </p>
+    </header>
+
+    <article>
+      <p>
+        This page explains how to delete PATHORA data and how to request deletion from
+        the developer. PATHORA does <strong>not</strong> run its own player account server.
+        Most gameplay data lives only on your device.
+      </p>
+
+      <h2>1. Delete data yourself (fastest)</h2>
+      <ol>
+        <li>On your Android device open <strong>Settings → Apps → PATHORA</strong>.</li>
+        <li>Choose <strong>Storage → Clear data</strong> (or uninstall the app).</li>
+        <li>Local progress, settings, and coins stored by PATHORA are removed immediately.</li>
+      </ol>
+      <div class="box ok">
+        Uninstalling PATHORA or clearing app data deletes the developer-controlled local
+        save right away. No waiting period.
+      </div>
+
+      <h2>2. Optional Play Games cloud save</h2>
+      <p>If you connected Google Play Games in PATHORA Settings:</p>
+      <ul>
+        <li>Open <strong>PATHORA → Settings</strong> and disconnect / sign out of Play Games if available, or</li>
+        <li>Manage / delete Play Games saved games in your Google / Play Games account settings.</li>
+      </ul>
+      <p>
+        Cloud snapshots are stored by <strong>Google Play Games</strong>, not on a PATHORA server.
+        After a deletion request we will also delete any cloud snapshot we can access for your
+        request (when Play Games is enabled for the app), typically within <strong>30 days</strong>.
+      </p>
+
+      <h2>3. What we delete vs what we cannot delete</h2>
+      <ul>
+        <li><strong>Deleted by you / us:</strong> local PATHORA save data; support messages you sent us; Play Games snapshots we can remove for your request.</li>
+        <li><strong>Not controlled by us:</strong> Google AdMob advertising identifiers and ad logs (handled by Google under
+          <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>); Android Auto Backup copies managed by Google/your device backup.</li>
+        <li><strong>Purchase records:</strong> Google Play keeps purchase history for legal/billing reasons; we do not store your card details.</li>
+      </ul>
+
+      <h2>4. Submit a deletion request</h2>
+      <p>
+        Open a request with the button below. Please include:
+      </p>
+      <ul>
+        <li>That the request is for <strong>PATHORA</strong> (<code>com.clxon24.pathora</code>)</li>
+        <li>Whether you used Play Games cloud sync (yes/no)</li>
+        <li>Any support emails you previously sent (so we can delete those threads)</li>
+      </ul>
+      <p>
+        <a class="cta"
+           href="https://github.com/XClaziX/pathora-privacy/issues/new?title=PATHORA%20data%20deletion%20request&amp;body=App%3A%20PATHORA%20(com.clxon24.pathora)%0A%0AI%20request%20deletion%20of%20my%20PATHORA-related%20data.%0A%0ADid%20I%20use%20Play%20Games%20cloud%20sync%3F%20(yes%2Fno)%3A%0A%0AAdditional%20notes%3A%0A">
+          Request data deletion
+        </a>
+      </p>
+      <div class="box">
+        We aim to confirm and complete developer-side deletion within <strong>30 days</strong>
+        of a clear request. Local device data is already gone after uninstall / clear data.
+      </div>
+
+      <h2>5. Privacy policy</h2>
+      <p>
+        Full policy:
+        <a href="https://xclazix.github.io/pathora-privacy/">https://xclazix.github.io/pathora-privacy/</a>
+      </p>
+    </article>
+  </div>
+</body>
+</html>

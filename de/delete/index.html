@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Datenlöschung beantragen — PATHORA</title>
+  <meta name="description" content="So löschst du PATHORA-Daten und stellst einen Löschantrag beim Entwickler." />
+  <style>
+    :root {
+      --bg: #f7f1e8;
+      --ink: #2c2420;
+      --muted: #6a5a52;
+      --card: #fffdf9;
+      --accent: #ff5a9a;
+      --line: #e8ddd0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: linear-gradient(180deg, #ffe8f2 0%, var(--bg) 28%, #e8f7ff 100%);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 28px 18px 64px; }
+    header {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px 20px;
+      box-shadow: 0 10px 30px rgba(44, 36, 32, 0.06);
+      margin-bottom: 18px;
+    }
+    .lang {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .lang span {
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .lang a {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--ink);
+      background: #f0e8df;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border: 1.5px solid transparent;
+    }
+    .lang a[aria-current="page"] {
+      background: #ffe0ef;
+      border-color: #ff5a9a;
+    }
+    h1 { margin: 0 0 8px; font-size: 1.65rem; }
+    .meta { color: var(--muted); font-size: 0.95rem; margin: 0; }
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 8px 20px 28px;
+    }
+    h2 { font-size: 1.15rem; margin-top: 1.6rem; color: var(--accent); }
+    ol, ul { padding-left: 1.25rem; }
+    li { margin: 0.45rem 0; }
+    a { color: #0b6e99; }
+    code { background: #f0e8df; padding: 1px 5px; border-radius: 6px; }
+    .cta {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 14px 20px;
+      border-radius: 14px;
+      background: var(--accent);
+      color: #fff !important;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(255, 90, 154, 0.28);
+    }
+    .box {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: #fff6d8;
+      border: 1px solid #f0e0a8;
+      color: var(--ink);
+      font-size: 0.95rem;
+    }
+    .ok {
+      background: #e8fff4;
+      border-color: #a8e8c8;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <nav class="lang" aria-label="Sprache">
+        <span>Sprache</span>
+        <a href="../../delete/">English</a>
+        <a href="./" aria-current="page">Deutsch</a>
+      </nav>
+      <h1>Datenlöschung — PATHORA</h1>
+      <p class="meta">
+        Android-App <code>com.clxon24.pathora</code> · Zuletzt aktualisiert: 19. Juli 2026
+      </p>
+    </header>
+
+    <article>
+      <p>
+        Hier erfährst du, wie du PATHORA-Daten löschst und beim Entwickler einen Löschantrag
+        stellst. PATHORA betreibt <strong>keinen</strong> eigenen Spieler-Account-Server.
+        Der meiste Spielfortschritt liegt nur auf deinem Gerät.
+      </p>
+
+      <h2>1. Selbst löschen (am schnellsten)</h2>
+      <ol>
+        <li>Auf dem Android-Gerät: <strong>Einstellungen → Apps → PATHORA</strong>.</li>
+        <li><strong>Speicher → Daten löschen</strong> (oder App deinstallieren).</li>
+        <li>Lokaler Fortschritt, Einstellungen und Münzen von PATHORA sind sofort weg.</li>
+      </ol>
+      <div class="box ok">
+        Deinstallation oder „Daten löschen“ entfernt den lokalen Speicher sofort —
+        ohne Wartezeit.
+      </div>
+
+      <h2>2. Optional: Play-Games-Cloud</h2>
+      <p>Falls du in PATHORA Google Play Games verbunden hast:</p>
+      <ul>
+        <li>In <strong>PATHORA → Einstellungen</strong> Play Games trennen / abmelden (falls verfügbar), oder</li>
+        <li>Saved Games in den Google- / Play-Games-Einstellungen verwalten bzw. löschen.</li>
+      </ul>
+      <p>
+        Cloud-Snapshots liegen bei <strong>Google Play Games</strong>, nicht auf einem PATHORA-Server.
+        Nach einem Löschantrag entfernen wir zusätzlich Snapshots, auf die wir für deinen
+        Antrag zugreifen können (wenn Play Games für die App aktiv ist), in der Regel
+        innerhalb von <strong>30 Tagen</strong>.
+      </p>
+
+      <h2>3. Was wir löschen / was nicht</h2>
+      <ul>
+        <li><strong>Von dir / uns löschbar:</strong> lokaler PATHORA-Speicher; Support-Nachrichten an uns; Play-Games-Snapshots, die wir für den Antrag entfernen können.</li>
+        <li><strong>Nicht von uns gesteuert:</strong> AdMob-Werbekennungen und Ad-Logs (Google,
+          siehe <a href="https://policies.google.com/privacy">Google-Datenschutzerklärung</a>);
+          Android-Auto-Backup-Kopien.</li>
+        <li><strong>Käufe:</strong> Google Play speichert Kaufhistorie aus rechtlichen/Abrechnungsgründen; wir speichern keine Kartendaten.</li>
+      </ul>
+
+      <h2>4. Löschantrag stellen</h2>
+      <p>Über den Button unten einen Antrag öffnen. Bitte angeben:</p>
+      <ul>
+        <li>dass es um <strong>PATHORA</strong> geht (<code>com.clxon24.pathora</code>)</li>
+        <li>ob Play-Games-Cloud genutzt wurde (ja/nein)</li>
+        <li>ob es frühere Support-Nachrichten gibt (damit wir die Threads löschen können)</li>
+      </ul>
+      <p>
+        <a class="cta"
+           href="https://github.com/XClaziX/pathora-privacy/issues/new?title=PATHORA%20Datenl%C3%B6schung&amp;body=App%3A%20PATHORA%20(com.clxon24.pathora)%0A%0AIch%20beantrage%20die%20L%C3%B6schung%20meiner%20PATHORA-bezogenen%20Daten.%0A%0APlay-Games-Cloud%20genutzt%3F%20(ja%2Fnein)%3A%0A%0AWeitere%20Hinweise%3A%0A">
+          Datenlöschung beantragen
+        </a>
+      </p>
+      <div class="box">
+        Entwicklerseitige Löschung bestätigen und erledigen wir in der Regel innerhalb von
+        <strong>30 Tagen</strong> nach klarem Antrag. Lokale Gerätedaten sind nach
+        Deinstallation / Daten löschen bereits weg.
+      </div>
+
+      <h2>5. Datenschutzerklärung</h2>
+      <p>
+        Vollständige Erklärung:
+        <a href="https://xclazix.github.io/pathora-privacy/de/">https://xclazix.github.io/pathora-privacy/de/</a>
+      </p>
+    </article>
+  </div>
+</body>
+</html>
