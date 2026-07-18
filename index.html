@@ -109,9 +109,16 @@
       <h2>2. Overview</h2>
       <p>
         PATHORA (“the App”, package ID <code>com.clxon24.pathora</code>) is an Android match-3 puzzle game.
-        The App does not require an account or registration. Gameplay progress is stored only
+        The App does not require an account or registration. Gameplay progress is stored
         locally on your device (Android DataStore). The App does not create, share, or upload
-        user-generated content to any server operated by us.
+        user-generated content to a server operated by us by default.
+      </p>
+      <p>
+        Optionally, you can connect <strong>Google Play Games</strong> in Settings to sync
+        progress via Play Games Saved Games (Snapshots) so you can restore progress on another
+        device with the same Play Games account. This only happens when you choose to connect.
+        Android Auto Backup may also restore local app data when you set up a new device with
+        the same Google account (system-controlled, not a PATHORA server).
       </p>
       <p>
         To support development, the App may display advertising via <strong>Google AdMob</strong>
@@ -144,7 +151,12 @@
           <tr>
             <td>Local save data (level progress, settings)</td>
             <td>Storing gameplay progress</td>
-            <td>Local device only</td>
+            <td>Local device; optional Android Auto Backup</td>
+          </tr>
+          <tr>
+            <td>Cloud save snapshot (progress, coins, meta) if you connect Play Games</td>
+            <td>Cross-device restore</td>
+            <td>Google Play Games Saved Games</td>
           </tr>
         </tbody>
       </table>
